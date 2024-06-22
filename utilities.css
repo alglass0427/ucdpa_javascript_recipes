@@ -205,6 +205,11 @@ body{
     flex-wrap: wrap;
 }
 
+/* input[type="radio"] {padding-left: 1em;
+color:#511f51} */
+
+.custom-radio{padding-left: 1em;
+	color:var(--primary-color)}
 
 
   .flex > h2 {

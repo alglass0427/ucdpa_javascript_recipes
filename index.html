@@ -138,12 +138,23 @@
     <div class="site-container">
         <!-- Change To Grid -->
         <div id = "search-container" class = "flex">
-            <h2>Do you have any allergies?</h2>           
-                <select title="select-Allergens" id = "isAllergic" class = "btn">
+            <h2>Do you have any allergies?</h2>
+            <form class = "radio-buttons">
+            <label class="custom-radio">
+                <input type="radio" name="option" value="Yes" class = "isAllergic">
+                Yes
+            </label>
+            <label class="custom-radio">
+                <input type="radio" name="option" value="No" class = "isAllergic">
+                No
+            </label>
+            </form>
+            
+                <!-- <select title="select-Allergens" id = "isAllergic" class = "btn">
                     <option value="" disabled selected>Please Select</option>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
-                </select>
+                </select> -->
         </div>
         
         <div id = "allergenContainer" class="flex">
@@ -184,7 +195,6 @@
 
 <div class = "site-container streams">
     <h2 class="md text-center my-2">
-        Stream
     </h2>
 
     <div class="container flex">
