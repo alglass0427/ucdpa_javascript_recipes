@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* :root variables can be used anywhere using var() STYLES*/
+ :root{
+  /* --primary-color: #FFB6C1; */
+  --primary-color: #f58989;
+  --alt-color:#bbfbfa;
+  /* --icon-color:#511f51;  --eee2b7  --#511f51 */
+  --icon-color:#511f51;
+  --light-color: #f4f4f4;
+  --dark-color: #E75480;
+  --secondary-color: #E75480;
+  --backgroung-color: url(https://th.bing.com/th/id/R.a8be95db0fc703db32f03051a36e6bab?rik=CSDDvQEyHA9BrQ&pid=ImgRaw&r=0) ;
+
+ }
+
+.menu-container{height: 800px;}
+
+.menu-item ul{
+  /* list-style: none; */
+  padding: 5px;
+  border-radius: var(--carousel-radius);
+  background-color: var(--);
+}
+
+/* ELEMENT STYLES */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    /* border: 2px solid black */
+  }
+  
+/* html{background-image: url(https://th.bing.com/th/id/R.a8be95db0fc703db32f03051a36e6bab?rik=CSDDvQEyHA9BrQ&pid=ImgRaw&r=0);} */
+
+ body{
+  font-family: 'Brush Script MT', cursive;
+   /* color :#333; */
+   line-height: 1.6;
+}
+ ul{
+  list-style-type: none;
+}
+ a{
+  text-decoration: none;
+   color :#333;
+}
+ h1, h2 {
+  font-weight: 300;
+   line-height: 1.2;
+   margin: 10px 0;
+}
+
+
+/* .logo_container{
+}
+ */
+ .logo {
+   margin: 10px ;
+   max-width: inherit;
+   max-height: inherit;
+   height: 130px;
+   width: inherit;
+   /* padding-left: 40px; */
+  /* object-fit: cover;
+   */
+}
+ p{
+  margin: 10px 0;
+}
+ img{
+  width: 100%;
+}
+/* NAVE BAR STYLES */
+ .navbar{
+  /* background-color: var(--primary-color) ; */
+  /* variable or the main website color*/
+  /* color: #fff;
+   */
+   height: 200px;
+}
+ .navbar .container{
+  overflow-x :hidden
+}
+ .navbar ul {
+  display:flex
+}
+ .navbar ul {
+  font-size: 24px;
+}
+ .navbar a {
+  color: var(--primary-color);
+   padding: 10px;
+   margin: 0 5px;
+   font-weight: bold;
+}
+ .navbar a:hover {
+  border-bottom: 2px var(--primary-color) solid;
+}
+/* FLEX CLASS INSIDE NAVBAR CLASS CSS */
+ .navbar .flex{
+  justify-content: space-evenly;
+}
+/* .navbar .container {
+  overflow: visible ;
+}
+ */
+/* SHOWCASE STYLES */
+ .showcase{
+   margin: 0 auto;
+   height: 450px;
+  /* background-color:var(--primary-color);
+   */
+   color:white ;
+   position:relative;
+}
+ .showcase .container{
+  background-color: var(--primary-color);
+   border-radius: 5px;
+}
+ .showcase-text{
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center
+}
+ .showcase-form {
+  position: relative;
+   top: 15px;
+   height: auto;
+   width: auto;
+   z-index: 100;
+}
+ .showcase-form .form-control{
+   margin: 30px 0;
+}
+/* Styles for the Input boxes text and email */
+ .showcase-form input[type='text'] , .showcase-form input[type='email'] {
+   border:0;
+   border-bottom: 1px solid #b4becb;
+   width: 100%;
+   padding:3px;
+   font-size: 16px;
+}
+/* Style For the input boxes when Clicked - removes outlines */
+ .showcase-form input:focus{
+   outline: none;
+}
+ .showcase h2{
+  font-size: 40px;
+}
+ .showcase p {
+  margin:20px 0;
+}
+ .showcase .grid {
+   grid-template-columns: 55% 45%;
+   gap: 45px;
+   overflow: visible;
+}
+ .iframe-container{
+  padding:20px
+}
+/* #latestvid{
+  width:350px;
+   height: 200px;
+}
+ */
+/* Stats */
+ .stats {
+  padding-top: 100px;
+}
+ .stats-heading {
+  max-width: 500px;
+   margin: auto;
+}
+ .stats .grid h3 {
+  font-size: 35px;
+}
+ .stats .grid p {
+  font-size: 20px;
+   font-weight: bold;
+}
+/* Cli */
+/* .cli{
+  margin-top:auto;
+}
+ */
+ .cli .grid {
+  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-rows: repeat(3, 1fr);
+   */
+}
+ .cli .card {
+  text-align: center;
+   background-color: var(--alt-color) ;
+   margin:20px 0;
+}
+ .cli .container{
+  padding:0
+}
+/* First Child will take the first section of The grid entry */
+ .cli .grid > *:first-child {
+   grid-column: 1/span 1;
+   grid-row: 1/span 1;
+}
+ .cli img {
+  width: auto;
+   max-height: 150px;
+}
+/* Tour Section Styles */
+ /* .tour {
+  background-color: #fff;
+  ;
+} */
+
+ .tour .container{
+  background-color: var(--primary-color);
+   padding:20px;
+   border-radius: 5px;
+}
+ .tour .grid {
+   grid-template-columns: 1fr;
+}
+ .tour img {
+  border-radius: 10px;
+}
+/* Stream Styles */
+ .streams {
+  margin-bottom:20px
+}
+ .streams .flex {
+  justify-content: space-around;
+   flex-wrap: wrap;
+}
+/* Note ::::: margin top , right , bottom , left Will take the right */
+/* Note ::::: transition targets transorm from card hover to move card - 15px */
+ .streams .card {
+  margin: 18px 10px 10px ;
+   text-align: center;
+   transition: transform ease-in 0.2s;
+}
+ .streams .card:hover{
+   transform: translateY(-15px);
+}
+/* Tour Site Styles */
+/* .tour-head .container .grid {
+  text-align: center;
+}
+ */
+/* .tour-head{
+  border: 2px solid black;
+}
+ */
+ .table {
+  margin-top: 20px;
+   margin-bottom: 20px;
+}
+ .table th {
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+ .table tr {
+   padding-top: 10px;
+   padding-bottom: 20px;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+ .flex-table {
+  display:flex;
+  /* flex-direction: column;
+   */
+   justify-content: center;
+   align-items: center;
+   height:100%;
+  /* border: 2px solid black;
+   */
+   flex: 1;
+}
+ .tour-year{
+  border-bottom: 2px var(--primary-color) solid;
+   justify-self:end;
+}
+/* Footer Styles */
+ .footer{
+  width:100%;
+  /* background-color: #fff; */
+  overflow: visible;
+}
+ .footer .container{
+  background-color: var(--primary-color);
+   padding:20px;
+   border-radius: 5px;
+}
+ .footer nav ul {
+  display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+ .footer nav li {
+  padding-right:20px;
+}
+ .footer td a:hover {
+  border-bottom: 2px var(--icon-color) solid;
+}
+ footer li a i:hover {
+  transform: scale(1.4);
+  transition: transform ease-in 0.2s;
+}
+ #tour-heading1{
+  grid-area: hding1;
+}
+ #tour-heading2{
+  grid-area: hding2;
+}
+ #tour-heading3{
+  grid-area: hding3;
+}
+ #tourhead{
+  grid-area: tourhead;
+}
+ #ddate1 {
+  grid-area: dd1;
+}
+ #ddate2 {
+  grid-area: dd2;
+}
+ #ddate3 {
+  grid-area: dd3;
+}
+ #ddate4 {
+  grid-area: dd4;
+}
+ #tdate1 {
+  grid-area: td1;
+}
+ #tdate2 {
+  grid-area: td2;
+}
+ #tdate3 {
+  grid-area: td3;
+}
+ #tdate4 {
+  grid-area: td4;
+}
+ #nydate1 {
+  grid-area: nyd1;
+}
+ #nydate2 {
+  grid-area: nyd2;
+}
+ #nydate3 {
+  grid-area: nyd3;
+}
+ #nydate4 {
+  grid-area: nyd4;
+}
+/* #tour-heading1{
+  grid-area: h;
+}
+ #tour-heading1{
+  grid-area: h;
+}
+ #tour-heading1{
+  grid-area: h;
+}
+ */
+ .grid-tour {
+  background-color: white;
+   justify-items: center;
+   display:grid;
+   gap:10px;
+   padding-bottom:10px;
+   padding-top:10px;
+   grid-template: 
+
+   "hding1 hding2 hding3" 1fr 
+                   "dd1 td1 nyd1" 
+                   "dd2 td2 nyd2" 
+                   "dd3 td3 nyd3" 
+                   "dd4 td4 nyd4" ;
+  /* grid-template-columns: 1fr 2fr;
+   */
+}
+ .gallery {
+  background-color: #fff
+}
+ .gallery .container{
+   border-radius: 5px;
+}
+ .tour-head {
+  background-color: #fff ;
+}
+ .tour-head .container{
+   border-radius: 5px;
+}
+ .image-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   gap: 40px;
+}
+ .image-gallery > li {
+   flex-basis: 150px;
+  /* width: 350px;
+   */
+}
+ .image-gallery li img {
+  /* object-fit: cover;
+   */
+  /* padding-top: 20px;
+   padding-bottom: 20px;
+   */
+   max-width: 100%;
+   height: auto;
+   vertical-align: middle;
+   border-radius: 5px;
+   transition: transform ease-in 0.2s;
+}
+ .image-gallery li img:hover{
+  transform: scale(1.4)
+}
+ /* section {
+  padding: 0 15%;
+  
+} */
+ .footer {
+   padding: 30px 20px 
+}
+ .icon {
+  color: var(--icon-color);
+}
+
+.image-gallery li iframe:hover{
+  transform: scale(0.96)
+}
+
+/* Tablet Media */
+ @media (max-width:768px) {
+   .navbar .logo{
+    height: 100px;
+     width: inherit;
+  }
+   .navbar {
+    height:200px
+  }
+   .navbar .flex {
+    flex-direction: column;
+     justify-content: center;
+  }
+   .grid, .showcase .grid , .stats .grid , .cli .grid {
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
+  }
+   .showcase {
+    height: auto;
+  }
+   .showcase-text {
+    text-align: center;
+     margin-top: 40px;
+  }
+  /* centers the item in The Grid or flex item */
+   .showcase-form {
+    justify-self: center;
+     margin:auto
+  }
+   .cli .grid > *:first-child {
+     grid-column: 1;
+     grid-row: 1;
+  }
+  /* .showcase .card {
+    width: auto;
+     height: auto;
+  }
+   */
+  /* .cli .card {
+    display: none;
+  }
+   */
+   .stat-heading {
+    display:none;
+  }
+   .text-center h2 {
+    font-size: 30px;
+    /* border: 2px solid black */
+  }
+   .cli h1 {
+    font-size: 40px;
+     text-align: center;
+  }
+   .cli p {
+    text-align: center;
+  }
+   .fontaw {
+    font-size: medium;
+  }
+   .stats .grid p {
+    font-size: 15px;
+  }
+   .stats .grid h3 {
+    font-size: 25px;
+  }
+}
+ .youtube-video {
+   aspect-ratio: 16 / 9;
+   width: 100%;
+}
+ /* section {
+  padding: 0 10px;
+} */
+ .footer {
+   padding: 30px 10px 
+}
+/* Mobile Media */
+ @media (max-width:500px) {
+   .navbar .logo{
+    height: 70px;
+     width: inherit;
+  }
+   .navbar {
+    height:250px
+  }
+   .navbar .flex {
+    flex-direction: column;
+     justify-content: center;
+  }
+   .navbar ul {
+    flex-direction: column;
+     padding:10px;
+  }
+   .navbar ul li {
+    margin:5px 0;
+     font-size: large;
+  }
+  /* html {
+    font-size: 70%;
+  }
+   */
+   .grid img {
+    display: none;
+  }
+   .tour .grid {
+     grid-template-columns: 1fr;
+  }
+   .grid-tour #tourhead {
+    font-size: 3rem;
+  }
+   .image-gallery li img:hover{
+    transform: none
+  }
+   section {
+    padding: 0 3px;
+  }
+   .footer {
+     padding: 30px 3px 
+  }
+   .grid-tour {
+    /* border: solid green;
+     */
+     grid-template: "hding1" 1fr "dd1" "dd2" "dd3" "dd4" "hding2" 1fr "td1" "td2" "td3" "td4" "hding3" 1fr "nyd1" "nyd2" "nyd3" "nyd4" ;
+  }
+}
