@@ -493,6 +493,8 @@
 #allergenHeader{text-align: center;
       }
 
+#food-allergens{justify-content: flex-start;}
+      
 /* ///////////////////SIDE BAR///////////////////// */
 
 /* Tablet Media */
