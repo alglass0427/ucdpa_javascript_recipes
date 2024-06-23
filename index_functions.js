@@ -50,6 +50,7 @@ function recursiveRemoveDup(ind,inputArray,newArray) {
 
 //Use recursive function to handle if array of arrays 
 //to get list with duplicates fully removed
+
 let singleAllergens =  cleanArray(allergens)
 
 
@@ -97,10 +98,10 @@ function arrangeMeals(menu) {
     // console.log(desserts)
     // recursiveRemoveDup(meals)
 
-
+//OPen and close button for aside to use in media query
     function openNav() {
         document.getElementById("mySidenav").style.width = `${(window.innerWidth / 3)}px`  //"250px"``;
-        document.getElementById("main").style.marginLeft =  "250px";
+        // document.getElementById("main").style.marginLeft =  "250px";
         // document.getElementById("header").style.marginLeft = "250px"
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
         // document.getElementById("openButton").style.display = "none"
@@ -109,8 +110,8 @@ function arrangeMeals(menu) {
       
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-        document.body.style.backgroundColor = "rgba(0,0,0,0)";
+        // document.getElementById("main").style.marginLeft= "0";
+        // document.body.style.backgroundColor = "rgba(0,0,0,0)";
         // document.getElementById("header").style.marginLeft = "0"
         // document.getElementById("openButton").style.display = "inline";
       }
@@ -118,16 +119,20 @@ function arrangeMeals(menu) {
 
 const allergenContainer  = document.getElementById("food-allergens");
 const searchContainer  = document.getElementById("search-container");
+const allergenApplied = document.querySelector("#allergenContainer");
+const allergenList = document.getElementById("allergenList");
+const cont = document.getElementById("menu-container")
 
 
 function addSearchButton(){
     
     try {
         let searchButton = document.getElementById("searchButton")
-        // nonExistentFunction();
+        //Check if search button exists
         if (searchContainer.contains(searchButton)){
             console.log("Search Exists");
             }
+        //
         else {
             let buttonContainer = document.createElement("div");
             buttonContainer.classList.add("flex","btn-outline")
@@ -160,7 +165,6 @@ function addSearchButton(){
       } catch (error) {
         console.error(error);
         // Expected output: ReferenceError: serachButton is not defined
-        // (Note: the exact output may be browser-dependent)
       }
 }
 
@@ -169,11 +173,12 @@ function getSearchResults(){
 
     //Add Search Button only when Allergens confirmed
     //Event listener getRecipes.js function for API
-    document.getElementById("searchButton").addEventListener("click",() => {getAllTheData()}
+    document.getElementById("searchButton").addEventListener("click",() => {
+        getAllTheData()}
     )
     //Add Clear Button only when Allergens confirmed
     document.getElementById("clearButton").addEventListener("click", () => {
-        let cont = document.getElementById("menu-container")
+        // let cont = document.getElementById("menu-container")
         removeAllChildren(cont)
         //move to constants
         let allergenApplied = document.querySelector("#allergenContainer")
@@ -186,7 +191,8 @@ function getSearchResults(){
 function addAllergens (allergies) {
     //created this function to reuse
     addSearchButton()
-
+    // removeAllChildren(allergenApplied)
+    // if (allergies.length !== 0) {
         for(i = 0; i < allergies.length ; i++ ){       
             //ID the Parent Element
             // let span = document.createElement("span");
@@ -211,6 +217,7 @@ function addAllergens (allergies) {
                 modal.open()
             },500);
         }
+    // }
     
     getSearchResults()
 
@@ -225,6 +232,7 @@ function capitalize(stringToCapitalize) {
     return stringToCapitalize[0].toUpperCase() + stringToCapitalize.slice(1,stringToCapitalize.length)
 }
 
+//UNIT TEST //////////////////////////////////////
 //Test The capital function
 function testFunction(fnc,result) {
     if (fnc === result) {
@@ -233,8 +241,7 @@ function testFunction(fnc,result) {
 }
 
 testFunction(capitalize("alan"),"Alan")
-
-
+///////////////////////////////////////////////////
 
 
 //Query selector for food-allergens form with checkboxes
@@ -249,11 +256,16 @@ for (let i = 0; i < isAllergic.length; i++) {
 isAllergic[i].addEventListener("click", () => {
     if(isAllergic[i].value === "Yes") {
         console.log("This person is allergic")
+        //reset the modal each time "yes" is selected
+        removeAllChildren(frm)
+        removeAllChildren(allergenList);
         addAllergens(singleAllergens)
     } else if (isAllergic[i].value === "No") {
         addSearchButton()
         getSearchResults()
+        //reset is "no" is selected
         removeAllChildren(frm)
+        removeAllChildren(allergenList);
         console.log("NO Allergies")
 }}
 )
@@ -285,8 +297,7 @@ function gatherAllergens() {
 
   //Populate the allergens in HTML
 function showAllergensSelected(arr) {
-    let allergenList = document.getElementById("allergenList");
-    let allergenApplied = document.querySelector("#allergenContainer");
+
     
     // removeAllChildren(allergenContainer);
     

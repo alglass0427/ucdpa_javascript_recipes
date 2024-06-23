@@ -31,15 +31,22 @@
             </div>
                 <nav>
                     <ul>
-                        <li><a href = "mercury.html" aria-label="Home">Home</a></li>
-                        <li><a href = "gallery.html" aria-label="Gallery">Gallery</a></li>
-                        <li><a href = "tour_test.html" aria-label="Tour">Tour</a></li>
+                        <li><a href = "index.html" aria-label="Home">Home</a></li>
+                        <li><a href = "index_drum.html" aria-label="Game">Game</a></li>
+                        <li><a href = "#contacts" aria-label="Contact">Contact</a></li>
                     </ul>
                 </nav>
+                <span id = "openButton" onclick="openNav()">&#9776;</span> 
         </div>
-
+        
     </section> 
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href = "index.html" aria-label="Home" onclick="closeNav()">Home</a>
+        <a href = "index_drum.html" aria-label="Game" onclick="closeNav()">Gallery</a>
+        <a href = "#contacts" aria-label="Contact" onclick="closeNav()">Contact</a>
+    </div>
     
 <!-- Cli Intro -->
 <!-- <div class="site-container">
@@ -163,13 +170,13 @@
             </div>
     
         </div>
-                <uc-modal class="flex mx-1">
+                <uc-modal class="flex">
                     <form id = "food-allergens" class="flex">
                         <!-- Populated by JS -->
                         </form>
                 </uc-modal>
         
-                <div id = "menu-container" class="flex">
+                <div id = "menu-container" class="site container">
                             <!-- Populated by JS -->
                 </div>
     </div>
@@ -237,7 +244,7 @@
 <footer class="footer bg-primary py5" >
     <div class="container grid grid-3">
 
-        <nav>
+        <nav id = "contacts">
             <ul>
                 <li ><a href = "https://www.facebook.com/" aria-label="Facebook">
                     <i class="fa-brands fa-facebook fa-2x icon"></i>
