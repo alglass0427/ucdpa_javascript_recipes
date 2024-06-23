@@ -490,6 +490,9 @@
   font-size: 2.5rem;  
 }
 
+#allergenHeader{text-align: center;
+      }
+
 /* ///////////////////SIDE BAR///////////////////// */
 
 /* Tablet Media */
@@ -504,7 +507,7 @@
    .navbar .flex {
     flex-direction: column;
     justify-content: center;
-    
+    gap:10px    
   }
    .grid, .showcase .grid , .stats .grid , .cli .grid {
      grid-template-columns: 1fr;
@@ -578,11 +581,11 @@
   .navbar nav{display: none;}
 
    .navbar .logo{
-    height: 130px;
+    height: 110px;
      width: inherit;
   }
    .navbar {
-    height:250px
+    height:170px
   }
    .navbar .flex {
     flex-direction: row;

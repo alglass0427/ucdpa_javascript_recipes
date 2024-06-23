@@ -4,9 +4,9 @@
     <!-- Meta Tages for SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content = "Irelands best production service for Musicians | Mercury Music">
-    <meta name="description" content="We provide musicians and singers of all levels from beginner to professional. We provide a full service from music lessons to album production and promotion">
-    <meta name="keywords" content="Musician, Music Lessons, Music Producer, Live Events">
+    <meta name="title" content = "Irelands best recipe guide for people with allergies | Recipe Finder">
+    <meta name="description" content="We provide a service for diners with allergies to specific ingrediants. We provide a full recipes along with images of the meals selected">
+    <meta name="keywords" content="Recipes, Allergies, Ingrediants, Love Cooking">
     <meta name="author" content="Alan Glass">
 
     <!-- Linked sheets -->
@@ -24,19 +24,20 @@
     <script src="modal.js"></script> 
 </head>
 <body>
-    <section class = "navbar">
+    <section class = "navbar" aria-label="Navigation Section">
         <div class ="container flex">
             <div id="logo_container" class = "logo">
-                <img Class = "logo" src="jokeLogo.png" alt="Mercury Logo">
+                <img Class = "logo" src="jokeLogo.png" alt="Company Logo">
             </div>
                 <nav>
                     <ul>
                         <li><a href = "index.html" aria-label="Home">Home</a></li>
                         <li><a href = "./drum/drum_index.html" aria-label="Game">Game</a></li>
                         <li><a href = "#contacts" aria-label="Contact">Contact</a></li>
+                        <li><a href = "#menu-container" aria-label="Recipes">Recipes</a></li>
                     </ul>
                 </nav>
-                <span id = "openButton" onclick="openNav()">&#9776;</span> 
+                <span aria-label="navigation menu button" id = "openButton" onclick="openNav()">&#9776;</span> 
         </div>
         
     </section> 
@@ -46,6 +47,7 @@
         <a href = "index.html" aria-label="Home" onclick="closeNav()">Home</a>
         <a href = "./drum/drum_index.html" aria-label="Game" onclick="closeNav()">Game</a>
         <a href = "#contacts" aria-label="Contact" onclick="closeNav()">Contact</a>
+        <a href = "#menu-container" aria-label="Recipes" onclick="closeNav()">Recipes</a>
     </div>
     
 <!-- Cli Intro -->
@@ -63,38 +65,38 @@
         <div class="slide" role="tabpanel" aria-labelledby="carousel-1-slide-1-title">
             <div class="slide-content">
                 <div class="slide-caption" >
-                    <h3 id="carousel-1-slide-1-title">Steak</h3>
-                    <p>and Chips </p>
+                    <h3 id="carousel-1-slide-1-title">Bruschetta</h3>
+                    <p>Tomato and Basil</p>
                 </div>
-                <img src="https://tse2.mm.bing.net/th/id/OIP.W1KcGsYLKvFHt27mGtuMYwHaFj?rs=1&pid=ImgDetMain" alt="Image of Food" width="800" height="350">
+                <img src="https://cdn.dummyjson.com/recipe-images/7.webp" alt="Image of Food" width="800" height="350">
             </div>
         </div>
 
         <div class="slide" role="tabpanel" aria-labelledby="carousel-1-slide-2-title">
             <div class="slide-content">
                 <div class="slide-caption">
-                    <h3 id="carousel-1-slide-2-title">Manali Mountains</h3>
-                    <p>Manali, Himachal Pradesh</p>
+                    <h3 id="carousel-1-slide-2-title">Cookies</h3>
+                    <p>Gluten free</p>
                 </div>
-                <img src="https://www.eatout.co.za/wp-content/uploads/2013/11/rhebok5-16May11-102150.jpg" alt="Fillet Steak Image" width="800" height="350">
+                <img src="https://cdn.dummyjson.com/recipe-images/3.webp" alt="Fillet Steak Image" width="800" height="350">
             </div>
         </div>
 
         <div class="slide" role="tabpanel" aria-labelledby="carousel-1-slide-3-title">
             <div class="slide-content">
                 <div class="slide-caption">
-                    <h3 id="carousel-1-slide-3-title">Fillet Steak</h3>
-                    <p>New Zealand</p>
+                    <h3 id="carousel-1-slide-3-title">Chicken Alfredo</h3>
+                    <p>Pasta</p>
                 </div>
-                <img src="https://thegreenloot.com/wp-content/uploads/2017/11/vegan-clean-eating-recipes-weight-loss-winter-dinner-12.jpg" alt="Aotearoa" width="800" height="350">
+                <img src="https://cdn.dummyjson.com/recipe-images/4.webp" alt="Aotearoa" width="800" height="350">
             </div>
         </div>
 
         <div class="slide" role="tabpanel" aria-labelledby="carousel-1-slide-4-title">
             <div class="slide-content">
                 <div class="slide-caption">
-                    <h3 id="carousel-1-slide-4-title">Richmond Park</h3>
-                    <p>London, England</p>
+                    <h3 id="carousel-1-slide-4-title">Mango Lassi</h3>
+                    <p></p>
                 </div>
                 <img src="https://cdn.dummyjson.com/recipe-images/22.webp" alt="London's Richmond Park" width="800" height="350">
             </div>
@@ -201,22 +203,22 @@
 <!-- Streaming -->
 
 <div class = "site-container streams">
-    <h2 class="md text-center my-2">
-    </h2>
+    <!-- <h2 class="md text-center my-2">
+    </h2> -->
 
     <div class="container flex">
         <div class="card">
             <h4>Fast</h4>
             <!-- <a href="https://open.spotify.com/" aria-label="Spotify Link"> -->
-                <i class="fa-solid fa-burger fa-3x icon"></i>
-            </a>
+              <a href="#"><i class="fa-solid fa-burger fa-3x icon"></i></a>
+            
         </div>
 
         <div class="card">
             <h4>Healthy</h4>
 
                 <!-- <a href="https://www.deezer.com/en/" aria-label="Deezer Link"> -->
-                    <i class="fa-solid fa-bowl-food fa-3x icon"></i>
+                    <a href="#"><i class="fa-solid fa-bowl-food fa-3x icon"></i>
                 </a>
 
         </div>
@@ -225,7 +227,7 @@
             <h4>Share</h4>
 
                 <!-- <a href="https://music.amazon.com/" aria-label="Amazon Link"> -->
-                    <i class="fa-solid fa-pizza-slice fa-3x icon"></i>
+                    <a href="#"><i class="fa-solid fa-pizza-slice fa-3x icon"></i>
                 </a>
         </div>
 

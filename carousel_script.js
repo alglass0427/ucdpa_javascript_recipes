@@ -1,4 +1,7 @@
 /* ---------------------------carousel---------------------- */
+
+//credit https://github.com/c99rahul/js-carousel
+
 /**
  * JavaScript Carousel
  *
