@@ -487,6 +487,7 @@
 #openButton {
   display:none;
   cursor: pointer;
+  font-size: 2.5rem;  
 }
 
 /* ///////////////////SIDE BAR///////////////////// */
@@ -502,7 +503,8 @@
   }
    .navbar .flex {
     flex-direction: column;
-     justify-content: center;
+    justify-content: center;
+    
   }
    .grid, .showcase .grid , .stats .grid , .cli .grid {
      grid-template-columns: 1fr;
@@ -583,8 +585,8 @@
     height:250px
   }
    .navbar .flex {
-    flex-direction: column;
-     justify-content: center;
+    flex-direction: row;
+     justify-content: space-around;
   }
    .navbar ul {
     flex-direction: column;
