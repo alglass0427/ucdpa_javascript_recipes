@@ -28,25 +28,25 @@ class Modal extends HTMLElement {
                 top: 5vh;
             }
 
-            ::-webkit-scrollbar {
-  width: 10px;
-}
+                      ::-webkit-scrollbar {
+                           width: 10px;
+                         }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 0.5vh;
-}
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #88042b;
-  border-radius: 0.5vh;
-}
+                      ::-webkit-scrollbar-track {
+                            box-shadow: inset 0 0 5px grey;
+                          border-radius: 0.5vh;
+                   }
+
+
+          ::-webkit-scrollbar-thumb {
+            background: #88042b;
+            border-radius: 0.5vh;
+          }
 
             #modal {
                 position: fixed;
-                top: 10vh;
+                top: 5vh;
                 width: 90%;
                 margin: 2em;
                 z-index: 100;
