@@ -28,12 +28,14 @@
 /* html{background-image: url(https://th.bing.com/th/id/R.a8be95db0fc703db32f03051a36e6bab?rik=CSDDvQEyHA9BrQ&pid=ImgRaw&r=0);} */
 
  body{
+  position: relative;
   font-family: 'Brush Script MT', cursive;
    /* color :#333; */
    line-height: 1.6;
-   min-width: 220px;
+   /* min-width: 220px; */
    background-color: #4b4a4a;
    max-width: var(--html-width);
+   min-width: 300px;
    margin:auto
 }
  ul{
@@ -438,10 +440,10 @@
 
 
 .menu-container{height: 800px;}
-
+.menu-item > * {overflow-wrap: break-word;}
 .menu-item {text-align: center;}
-.menu-item > h3{font-size: 1.5rem;}
-.menu-item > h2{font-size: 1.75rem;}
+.menu-item > h3{font-size: 1.75rem;}
+.menu-item > h2{font-size: 2rem;}
 .menu-item > p{
   font-family: 'Brush Script MT';
   font-size: 1.25em;
@@ -453,7 +455,7 @@
   background-color: var(--);
 }
 
-label{font-size: 1.25;}
+label{font-size: 1.25rem;}
 
 /* ///////////////////SIDE BAR///////////////////// */
 
@@ -503,11 +505,8 @@ label{font-size: 1.25;}
   display:none;
   cursor: pointer;
   font-size: 2.5rem;  
+  color: var(--primary-color);
 }
-
-#allergenHeader{text-align: center;
-    color: var(--icon-color);
-      }
 
 #food-allergens{justify-content: flex-start;}
       
@@ -627,7 +626,7 @@ label{font-size: 1.25;}
 
   .grid-3{
     grid-template-columns: repeat(2,1fr);
-{}
+}
    .tour .grid {
      grid-template-columns: 1fr;
   }

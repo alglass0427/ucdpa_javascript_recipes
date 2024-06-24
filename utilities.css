@@ -232,8 +232,11 @@ color:#511f51} */
   }
   
 .site-container > h2 {
-	color: var(--light-color);
+	color: var(--secondary-color);
 }
+#allergenHeader{text-align: center;
+  color: var(--light-color);
+    }
 
 #allergenList{display: grid;}
 #allergenContainer{margin-top: 1rem;}
