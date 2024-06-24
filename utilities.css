@@ -30,12 +30,9 @@ html{
 }
 
 /* UTILITIES */
-body{
-	min-width: 220px;
-	background-color: #4b4a4a;
-	max-width: var(--html-width);
-	margin:auto
-}
+/* body{
+
+} */
  .container{
 	 max-width: 1100px;
 	 margin: 0 auto;
@@ -235,7 +232,7 @@ color:#511f51} */
   }
   
 .site-container > h2 {
-	color: var(--secondary-color);
+	color: var(--light-color);
 }
 
 #allergenList{display: grid;}
@@ -243,7 +240,7 @@ color:#511f51} */
 #allergenList > span {
   font-family: 'Brush Script MT';
   font-size: 1.25rem;
-  color:#eee2b7;
+  color: var(--light-color);
   }
 /* .site-container > span {
 
