@@ -302,7 +302,7 @@ function gatherAllergens() {
 //Populate the allergens in HTML
 function showAllergensSelected(arr) {
 
-
+if (arr.length > 0) {
     // removeAllChildren(allergenContainer);
 
 
@@ -320,6 +320,7 @@ function showAllergensSelected(arr) {
     h2.id = "allergenHeader";
     h2.textContent = "Below meals do not contain these ingrediants...."
     allergenList.prepend(h2);
+}
 }
 
 
