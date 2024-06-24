@@ -501,7 +501,7 @@ label{font-size: 1.25;}
   font-size: 2.5rem;  
 }
 
-#allergenHeader{text-align: center;
+#allergenHeader{text-align: center;display: grid;
       }
 
 #food-allergens{justify-content: flex-start;}
@@ -619,6 +619,10 @@ label{font-size: 1.25;}
    .grid img {
     display: none;
   }
+
+  .grid-3{
+    grid-template-columns: repeat(2,1fr);
+{}
    .tour .grid {
      grid-template-columns: 1fr;
   }
