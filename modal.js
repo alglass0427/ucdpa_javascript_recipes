@@ -28,16 +28,33 @@ class Modal extends HTMLElement {
                 top: 5vh;
             }
 
+            ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0.5vh;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #88042b;
+  border-radius: 0.5vh;
+}
+
             #modal {
                 position: fixed;
                 top: 10vh;
-                width: 75%;
+                width: 90%;
                 margin: 2em;
                 z-index: 100;
                 background: white;
                 max-width : 800px;
-                max-height : 600px;
+                max-height : 90%;
                 overflow-y: auto;
+                
                 border-radius: 10px;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.26);
                 display: flex;
