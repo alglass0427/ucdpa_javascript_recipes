@@ -36,7 +36,7 @@ class Modal extends HTMLElement {
                 z-index: 100;
                 background: white;
                 max-width : 800px;
-                max-height : 800px;
+                max-height : 600px;
                 overflow-y: auto;
                 border-radius: 10px;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.26);
