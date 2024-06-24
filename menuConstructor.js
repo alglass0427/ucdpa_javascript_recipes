@@ -1,4 +1,4 @@
-// An individual player. Holds properties and behaviour for one player
+// An individual recipe
 class Meal {
   constructor(strName, arrIngedients, arrInstructions, strImageLink) {
     this.name = strName;
