@@ -1,11 +1,64 @@
-<mxfile host="app.diagrams.net" modified="2024-06-23T14:59:58.099Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="BfBXqz2M4UChUhNPyTFN" version="24.6.2" type="device">
+<mxfile host="app.diagrams.net" modified="2024-06-24T19:16:49.917Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="xU6YfSFDlW-BqbDbt48L" version="24.6.2" type="github">
   <diagram id="T3wb09TkJcfDdkeaGVoH" name="Page-1">
-    <mxGraphModel dx="1970" dy="2315" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1532" dy="2060" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="_Hk1niEVdFuktYwmPFE8-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="-1000" width="120" height="60" as="geometry" />
+        <mxCell id="9kNJDGCUn79xdz2x17ff-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_Hk1niEVdFuktYwmPFE8-1" target="9kNJDGCUn79xdz2x17ff-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="-1050" />
+              <mxPoint x="130" y="-950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_Hk1niEVdFuktYwmPFE8-1" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;fetch&lt;/span&gt;(&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;https://dummyjson.com/recipes&#39;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="-1110" width="479" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="9kNJDGCUn79xdz2x17ff-1" target="9kNJDGCUn79xdz2x17ff-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-1" value=".then" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="-1030" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9kNJDGCUn79xdz2x17ff-3" target="9kNJDGCUn79xdz2x17ff-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-3" value="parse JSON&lt;div&gt;response.json()&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="-900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-8" value=".then" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="-910" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9kNJDGCUn79xdz2x17ff-10" target="9kNJDGCUn79xdz2x17ff-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-10" value="data =&amp;gt;&amp;nbsp; Create instance of allMeals which has function to create&lt;div&gt;and instance of Meal and creates the array&amp;nbsp;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="-800" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.158;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9kNJDGCUn79xdz2x17ff-8" target="9kNJDGCUn79xdz2x17ff-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-13" value=".then" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="-810" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9kNJDGCUn79xdz2x17ff-15" target="9kNJDGCUn79xdz2x17ff-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-15" value="create empty array&amp;nbsp; ==&amp;gt;&amp;nbsp; getAllergens using function&lt;div&gt;&lt;br&gt;&lt;div&gt;==&amp;gt; use class function to determine if the recipe contains any selected allergens selected on the application MODAL -&amp;nbsp; if true do not add to the Array -&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="-680" width="460" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-18" value=".then" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="-680" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-20" value="==&amp;gt; return the list of allergens selected and meals that do not Contain&amp;nbsp;&lt;div&gt;MANIPULATE DOM TO ADD RESPONSE&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="-540" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.196;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9kNJDGCUn79xdz2x17ff-13" target="9kNJDGCUn79xdz2x17ff-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9kNJDGCUn79xdz2x17ff-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.384;entryY=0.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9kNJDGCUn79xdz2x17ff-18" target="9kNJDGCUn79xdz2x17ff-20">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
