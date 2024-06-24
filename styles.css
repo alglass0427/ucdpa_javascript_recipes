@@ -436,6 +436,8 @@
 .menu-container{height: 800px;}
 
 .menu-item {text-align: center;}
+.menu-item > h3{font-size: 1.5rem;}
+.menu-item > h2{font-size: 1.75rem;}
 .menu-item > p{
   font-family: 'Brush Script MT';
   font-size: 1.25em;
@@ -447,7 +449,7 @@
   background-color: var(--);
 }
 
-label{font-size: 1.25rem;}
+label{font-size: 1.25;}
 
 /* ///////////////////SIDE BAR///////////////////// */
 
