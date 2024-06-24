@@ -53,7 +53,7 @@ function recursiveRemoveDup(ind, inputArray, newArray) {
 let singleAllergens = cleanArray(allergens)
 
 
-//Unused funtion  - 
+//Unused function  - - - - Future idea
 function arrangeMeals(menu) {
     let returnArrays = []
     let mealTypes = []
